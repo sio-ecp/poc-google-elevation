@@ -1,9 +1,10 @@
 language: python
 python:
-    - "2.7"
+  - "2.7"
 
+# command to install dependencies
 install:
-    - pip install requests
-    - pip install json
+  - pip install requests
+  - pip install json
 
- script: nosetests
+script: nosetests
