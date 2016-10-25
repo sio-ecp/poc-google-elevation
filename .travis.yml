@@ -6,4 +6,4 @@ python:
 install:
   - pip install requests
 
-script: nosetests
+script: --exe --with-coverage --cover-package=pyiterable
