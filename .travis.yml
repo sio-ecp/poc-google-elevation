@@ -1,8 +1,10 @@
 language: python
 python:
-  - "2.7"
+  - '2.7'
 
-# command to install dependencies
+before_install:
+  - openssl aes-256-cbc -K $encrypted_dbeb09c72915_key -iv $encrypted_dbeb09c72915_iv -in mykey.py.enc -out mykey.py -d
+
 install:
   - pip install requests
 
